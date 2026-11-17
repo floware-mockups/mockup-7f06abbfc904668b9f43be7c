@@ -1,0 +1,227 @@
+{
+  "title": "Gestione delle richieste per il verde pubblico",
+  "description": "Prototipo per registrare, assegnare e monitorare le richieste di manutenzione, con priorità e quartiere.",
+  "accent": "emerald",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Panoramica",
+      "description": "Situazione delle richieste e accesso rapido alle attività aperte.",
+      "metrics": [
+        {
+          "label": "Richieste aperte",
+          "value": "18"
+        },
+        {
+          "label": "Priorità alta",
+          "value": "4"
+        },
+        {
+          "label": "In attesa di assegnazione",
+          "value": "3"
+        },
+        {
+          "label": "Interventi completati nel mese",
+          "value": "27"
+        }
+      ],
+      "columns": [
+        "Codice",
+        "Area verde",
+        "Quartiere",
+        "Intervento",
+        "Priorità",
+        "Stato",
+        "Squadra",
+        "Data segnalazione"
+      ],
+      "rows": [
+        [
+          "V-0291",
+          "Giardino delle Nubi",
+          "Lumo",
+          "Potatura",
+          "Alta",
+          "Presa in carico",
+          "Squadra Vela",
+          "12/05/2026"
+        ],
+        [
+          "V-0292",
+          "Parco dei Gelsi Azzurri",
+          "Vela",
+          "Irrigazione",
+          "Media",
+          "Da assegnare",
+          "—",
+          "13/05/2026"
+        ],
+        [
+          "V-0293",
+          "Aiola delle Lanterne",
+          "Nubi",
+          "Rimozione rami",
+          "Alta",
+          "In lavorazione",
+          "Squadra Lumo",
+          "13/05/2026"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "richieste",
+      "title": "Richieste di manutenzione",
+      "description": "Consulta e filtra le segnalazioni per quartiere, priorità e stato.",
+      "metrics": [],
+      "columns": [
+        "Codice",
+        "Area verde",
+        "Quartiere",
+        "Intervento",
+        "Priorità",
+        "Stato",
+        "Squadra",
+        "Data segnalazione"
+      ],
+      "rows": [
+        [
+          "V-0291",
+          "Giardino delle Nubi",
+          "Lumo",
+          "Potatura",
+          "Alta",
+          "Presa in carico",
+          "Squadra Vela",
+          "12/05/2026"
+        ],
+        [
+          "V-0292",
+          "Parco dei Gelsi Azzurri",
+          "Vela",
+          "Irrigazione",
+          "Media",
+          "Da assegnare",
+          "—",
+          "13/05/2026"
+        ],
+        [
+          "V-0293",
+          "Aiola delle Lanterne",
+          "Nubi",
+          "Rimozione rami",
+          "Alta",
+          "In lavorazione",
+          "Squadra Lumo",
+          "13/05/2026"
+        ],
+        [
+          "V-0294",
+          "Boschetto delle Sere",
+          "Lumo",
+          "Sfalcio",
+          "Bassa",
+          "Completata",
+          "Squadra Nubi",
+          "10/05/2026"
+        ],
+        [
+          "V-0295",
+          "Viale dei Salici Blu",
+          "Vela",
+          "Controllo alberature",
+          "Media",
+          "Presa in carico",
+          "Squadra Vela",
+          "11/05/2026"
+        ],
+        [
+          "V-0296",
+          "Prato delle Cicale",
+          "Nubi",
+          "Ripristino aiuola",
+          "Bassa",
+          "Da assegnare",
+          "—",
+          "14/05/2026"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "nuova-richiesta",
+      "title": "Nuova richiesta",
+      "description": "Registra una segnalazione con i dati essenziali per valutarla e assegnarla.",
+      "metrics": [],
+      "columns": [
+        "Area verde",
+        "Quartiere",
+        "Intervento",
+        "Priorità",
+        "Stato",
+        "Squadra",
+        "Data segnalazione"
+      ],
+      "rows": [],
+      "form": [
+        "Area verde",
+        "Quartiere",
+        "Intervento",
+        "Priorità",
+        "Stato",
+        "Squadra",
+        "Data segnalazione"
+      ]
+    },
+    {
+      "id": "squadre",
+      "title": "Squadre e assegnazioni",
+      "description": "Verifica il carico delle squadre e le richieste in corso.",
+      "metrics": [
+        {
+          "label": "Squadre operative",
+          "value": "3"
+        },
+        {
+          "label": "Richieste assegnate",
+          "value": "15"
+        },
+        {
+          "label": "Richieste senza squadra",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Squadra",
+        "Quartiere prevalente",
+        "Richieste aperte",
+        "Intervento principale",
+        "Disponibilità"
+      ],
+      "rows": [
+        [
+          "Squadra Lumo",
+          "Nubi",
+          "5",
+          "Sfalcio e potatura",
+          "Operativa"
+        ],
+        [
+          "Squadra Vela",
+          "Lumo",
+          "6",
+          "Potatura e alberature",
+          "Operativa"
+        ],
+        [
+          "Squadra Nubi",
+          "Vela",
+          "4",
+          "Irrigazione e aiuole",
+          "Operativa"
+        ]
+      ],
+      "form": []
+    }
+  ]
+}
